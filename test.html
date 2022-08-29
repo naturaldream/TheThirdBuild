@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<audio id="bgmusic" src="music/鞠婧祎-芙蓉-《如意芳霏》电视剧片头曲.mp3" autoplay="autoplay" loop="loop" style="display: block; width: 3%; height:3%;"></audio>
+<script type="text/javascript">
+  //var s1=document.getElementById("bgmusic");
+ // s1.play();
+  function toggleSound() {
+    var music = document.getElementById("bgmusic");//获取ID
+    console.log(music);
+    console.log(music.paused);
+    if (music.paused) { //判读是否播放
+      music.paused=false;
+      music.play(); //没有就播放
+
+    }
+
+  }
+  setInterval("toggleSound()",1);
+</script>
+
+
+
+
+</body>
+</html>
